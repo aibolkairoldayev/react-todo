@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import { Header } from './components/Header/Header'
+import { TodoPanel } from './components/TodoPanel/TodoPanel'
 import './App.css';
 
-function App() {
+
+export const App = () => {
+  const [todos, setTodos] = React.useState(DEFAULT_TODO_LIST)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header todoCount={todos.length} />
+      <TodoPanel />
     </div>
   );
 }
+
+
+
 
 export default App;
