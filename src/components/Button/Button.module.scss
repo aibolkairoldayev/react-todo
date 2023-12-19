@@ -1,0 +1,28 @@
+.button {
+    border-radius: 5px;
+    padding: 8px 10px;
+    cursor: pointer;
+    background-color: #fff;
+    &__red {
+        border: 1px solid #4e1010;
+        color: #df2626;
+        &:hover {
+            border: 1px solid #564e4e;
+        }
+    }
+    &__yellow {
+        border: 1px solid #9b9b0b;
+        color: #ffff00;
+        &:hover {
+            border: 1px solid #564e4e;
+        }
+    }
+    &__blue {
+        border: 1px solid #070793;
+        color: #4a4adc;
+        &:hover {
+            border: 1px solid #564e4e;
+        }
+    }
+}
+ 
